@@ -1,18 +1,17 @@
-diff --git a/smali_classes3/Je/b.smali b/smali_classes3/Je/b.smali
-index 2b82df3..7b8d6e4 100644
---- a/smali_classes3/Je/b.smali
-+++ b/smali_classes3/Je/b.smali
-@@ -1131,47 +1131,6 @@
- .method public final H()Z
+diff --git a/smali_classes3/Te/c.smali b/smali_classes3/Te/c.smali
+--- a/smali_classes3/Te/c.smali
++++ b/smali_classes3/Te/c.smali
+@@ -1578,47 +1578,6 @@
+ .method public final J()Z
      .locals 1
  
--    invoke-virtual {p0}, LJe/b;->G()Z
+-    invoke-virtual {p0}, LTe/c;->I()Z
 -
 -    move-result p0
 -
 -    if-nez p0, :cond_1
 -
--    sget-object p0, LQa/b;->o0:Ljava/lang/String;
+-    sget-object p0, LVa/c;->q0:Ljava/lang/String;
 -
 -    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 -
@@ -20,7 +19,7 @@ index 2b82df3..7b8d6e4 100644
 -
 -    if-nez p0, :cond_0
 -
--    sget-object p0, LQa/b;->o0:Ljava/lang/String;
+-    sget-object p0, LVa/c;->q0:Ljava/lang/String;
 -
 -    goto :goto_0
 -
@@ -34,7 +33,7 @@ index 2b82df3..7b8d6e4 100644
 -    move-result-object p0
 -
 -    :goto_0
--    sget-object v0, LQa/b;->l0:Ljava/util/List;
+-    sget-object v0, LVa/c;->n0:Ljava/util/List;
 -
 -    invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 -

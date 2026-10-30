@@ -1,25 +1,26 @@
-diff --git a/smali/k7/x.smali b/smali/k7/x.smali
-index 4e69976..0fdbcfb 100644
---- a/smali/k7/x.smali
-+++ b/smali/k7/x.smali
-@@ -385,6 +385,39 @@
-     :try_end_6
-     .catchall {:try_start_6 .. :try_end_6} :catchall_f
+diff --git a/smali/n7/x.smali b/smali/n7/x.smali
+--- a/smali/n7/x.smali
++++ b/smali/n7/x.smali
+@@ -327,6 +327,41 @@
+     :try_end_1
+     .catchall {:try_start_1 .. :try_end_1} :catchall_e
  
-+    const/4 v2, 0x1
++    const/4 v12, 0x1
 +
-+    array-length v13, v3
++    :cond_dada_ultra_raw_scan
++    invoke-virtual {v6}, Ljava/nio/Buffer;->limit()I
++
++    move-result v0
++
++    if-ge v12, v0, :cond_dada_ultra_raw_description_done
 +
 +    const/high16 v0, 0x10000
 +
-+    invoke-static {v13, v0}, Ljava/lang/Math;->min(II)I
++    if-ge v12, v0, :cond_dada_ultra_raw_description_done
 +
-+    move-result v13
++    invoke-virtual {v6, v12}, Ljava/nio/ByteBuffer;->get(I)B
 +
-+    :cond_dada_ultra_raw_scan
-+    if-ge v2, v13, :cond_dada_ultra_raw_description_done
-+
-+    aget-byte v0, v3, v2
++    move-result v0
 +
 +    and-int/lit16 v0, v0, 0xff
 +
@@ -27,7 +28,7 @@ index 4e69976..0fdbcfb 100644
 +
 +    if-gtz v0, :cond_dada_ultra_raw_detected
 +
-+    add-int/lit8 v2, v2, 0x2
++    add-int/lit8 v12, v12, 0x2
 +
 +    goto :cond_dada_ultra_raw_scan
 +
@@ -35,10 +36,10 @@ index 4e69976..0fdbcfb 100644
 +
 +    const-string v0, "Xiaomi Ultra RAW"
 +
-+    invoke-virtual {v10, v0}, Landroid/hardware/camera2/DngCreator;->setDescription(Ljava/lang/String;)Landroid/hardware/camera2/DngCreator;
++    invoke-virtual {v8, v0}, Landroid/hardware/camera2/DngCreator;->setDescription(Ljava/lang/String;)Landroid/hardware/camera2/DngCreator;
 +
 +    :cond_dada_ultra_raw_description_done
 +
-     :try_start_7
-     new-instance v13, Ljava/io/BufferedInputStream;
+     :try_start_2
+     new-instance v12, Ljava/io/BufferedInputStream;
  

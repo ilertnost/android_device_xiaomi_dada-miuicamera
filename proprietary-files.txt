@@ -1,6 +1,6 @@
 # All unpinned blobs below are extracted from dada OS3.0.6.0.WOCMIXM
 
-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera2|5ab16bd55aaffeab3148c3117b8eede0aa55fbf3|997685b54fffd2cd0e4e4700e66668f0e1abdf20
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera2|5ab16bd55aaffeab3148c3117b8eede0aa55fbf3|8279e214cc64e09e62cb1864a7663c5855e6b65f
 system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so|5e9dc8eb6cd38364d0771f36b69acc483182550f|c013361ab5682d7329e9b8c6ad6f44710c0c3298
 system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so|0f7946b2d10ff7aa6693943a51a406804bb9c0c4|9e8dbbd70f59c0512365aeaaf79c57bf35b9675d
 system_ext/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so|2caa8b148625b0cd46e31b43166cec29d24d6472|cca704a601ccc6089cf75b1870c976efccb9a143
